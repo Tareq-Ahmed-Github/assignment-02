@@ -236,8 +236,29 @@ footer{
 /*--------------
 -----mobile-------
 ------------- */
-@media only screen and (max-width:688px){
+@media only screen and (max-width:688px) {
+    
 
+    main{
+        width: 100%;
+        margin-left: -100px;
+    }
+
+    .products-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .see-more{
+        margin-right: 1250px;
+    }
+    .popular-products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+footer{
+    width: 100%;
+}
     
     
 }
@@ -247,11 +268,30 @@ footer{
 -------------------*/
 @media only screen and (max-width:992px){
 
+    main{
+        width: 100%;
+        margin-left: -10px;
+    }
+
     .products-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular-products{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-    }    
+        justify-content: center;
+    }
 
+    .social-influencer{
+        justify-content: center;
+    }
+
+    footer{
+        width: 100%;
+    }
     
 }
 
@@ -260,22 +300,33 @@ footer{
 ----------------*/
 @media only screen and (min-width:993px){
 
+    main{
+        width: 100%;
+    }
+    .products-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
 
-    
-}
+    }
 
+    .popular-products{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+    }
 
+    .social-influencer{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social-blogs{
+        margin-left: 100px;
+    }
+    footer{
+        width: 100%;
+    }
 
-
-@media only screen and (max-width:1790px){
-
-.social-influencer{
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-}
-.social-blogs{
-    margin-left: 100px;
-}
     
 }
