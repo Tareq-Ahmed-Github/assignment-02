@@ -12,7 +12,7 @@ body{
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(252, 169, 169);
     margin: 0;
 }
 
@@ -27,7 +27,9 @@ body{
 
 main{
     background-color: white;
-    width: 80%;
+    /* width: 80%; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
 }
 
 /*--------------------------------------------
@@ -39,13 +41,13 @@ main{
 ----------------------------*/
 .header{
     margin-bottom: 150px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 
 .nav-bar{
     display: flex;
     justify-content: center;
-    margin-left: -200px;
+    /* margin-left: -200px; */
     font-size: 2rem;
     font-weight: 700;
     margin-top: 50px;
@@ -55,13 +57,18 @@ main{
 .header-body{
     display: flex;
     justify-content: space-between;
-    margin-top: 150px;
+    /* margin-top: 150px; */
+    position: relative;
+    margin: 5%;
   
+}
+.influencer{
+    color: #E02C6D;
 }
 
 .blogs{
-    width: 500px;
-    margin-left: 10px;
+    width: 50%;
+    /* margin-left: 5%; */
     margin-top: 30px;
 
 }
@@ -70,7 +77,9 @@ main{
 }
 
 .article-banner{
-    margin: 50px 150px;
+    display: block;
+    /* width: 100%; */
+    margin-top: 50px;
     cursor: zoom-in;
 }
 .article-banner:hover img{
@@ -80,6 +89,11 @@ main{
 
 button{
     cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+        transform: scale(1.1);
+        transition-duration: .5s;
 }
 .preebook-now{
     width: 196px;
@@ -102,7 +116,9 @@ button{
 ----------------------------*/
 
 .products-section{
-    margin: 10px;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     
 }
 
@@ -115,7 +131,9 @@ button{
 .popular-products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    margin: 5%;
+    margin-bottom: -2%;
 }
 
 .price{
@@ -128,6 +146,11 @@ button{
     box-shadow: 2px 2px 2px 2px #AAAAAA;
     height: 476px;
     width: 329px;
+    cursor: grab;
+}
+.product:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
 }
 .product-banner{
     margin:14px;
@@ -154,48 +177,55 @@ button{
     flex-direction: column;
 }
 
+.see-more-button{
+    margin-left: 80%;
+    margin-bottom: 5%;
+    margin-top: 1%;
+}
 .see-more{
-    width: 196px;
-    height: 44px;
+    /* width: 196px; */
+    /* height: 44px; */
     display: flex;
     align-items: center;
     color: #E02C6D;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.986);
     border: 0px;
-    margin-left: 1250px;
+    /* margin-left: 1250px; */
     font-size: 1.2rem;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     
 }
 .see-more h4{
     padding-right: 10px;
 }
 
-/*--------------------------------------------
--------------------------------------------
------------------------------------------
----style inside header elements ------
------------------------------------
---------------------------------
-----------------------------*/
+/*------------------------------------------------
+-----------------------------------------------
+---------------------------------------------
+---S O C I A L  I N F L U E N C E R ------
+--------------------------------------
+----------------------------------
+------------------------------*/
 
 .social-influencer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 200px;
+    column-gap: 1%;
     justify-content: space-between;
-    margin-top: 150px;
+    /* margin-top: 300px; */
     margin-bottom: 150px;
+    margin: 5%;
   
 }
 .social-influencer-banner{
-    margin-left:100px;
+    /* margin-left:100px; */
     cursor: zoom-in;
-    width: .5rem;
+    width: 100%;
 }
 
 .social-blogs{
-    width: 500px;
+    width: 100%;
+    /* width: 500px; */
     /* margin-right: ; */
 }
 
@@ -233,100 +263,195 @@ footer{
 ----------------------------*/
 
 
-/*--------------
------mobile-------
-------------- */
-@media only screen and (max-width:688px) {
-    
+@media screen and (max-width:1285px) {
+    .social-blogs h1{
+        font-size: 22px;
+    }
+    .social-blogs p{
+        font-size: 16px;
+    }
+}
 
-    main{
+
+
+@media screen and (max-width:1165px) {
+    .products-section{
+        margin-left: -1%;
+    }
+}
+
+
+@media screen and (max-width:1094px) {
+    .products-section{
+        margin-left: -3%;
+    }
+}
+
+
+@media screen and (max-width:1184px) {
+    .products-section{
+        margin-left: -4%;
+    }
+}
+
+
+@media screen and (max-width:1060px) {
+    .products-section{
+        margin-left: -5%;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    
+    .header-body{
         width: 100%;
-        margin-left: -100px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .blogs{
+        margin-left: 20%;
+    }
+    .article-banner{
+        width: 100%;
+        margin-left: 20%;
+    }
+    .products-section{
+        margin-left: 10%;
+
     }
 
-    .products-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+
+    .popular-products{
+        grid-template-columns: repeat(2,1fr);
     }
     .see-more{
-        margin-right: 1250px;
-    }
-    .popular-products{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-footer{
-    width: 100%;
-}
-    
-    
-}
-
-/* ------------------
--------tablets-----
--------------------*/
-@media only screen and (max-width:992px){
-
-    main{
-        width: 100%;
-        margin-left: -10px;
-    }
-
-    .products-section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .popular-products{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-content: center;
+        margin-left: -50%;
     }
 
     .social-influencer{
-        justify-content: center;
+        grid-template-columns: repeat(1,1fr);
     }
-
-    footer{
-        width: 100%;
+    .social-influencer-banner{
+        margin-left: 10%;
     }
-    
 }
 
-/*--------------
-----laptop-------
-----------------*/
-@media only screen and (min-width:993px){
 
-    main{
-        width: 100%;
+@media screen and (max-width:845px) {
+    .blogs{
+        margin-left: 30%;
     }
-    .products-section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    .article-banner{
+        margin-left: 20%;
+    }
+    .section-title{
+        margin-left: -2%;
+    }
+    .popular-products{
+        margin-left: -1%;
+    }
+    .social-influencer-banner img{
+        height: 350px;
+        width: 600px;
+        margin-left: -5%;
+    }
+}
 
+
+@media screen and (max-width:780px) {
+    .blogs{
+        margin-left: 30%;
+    }
+    .article-banner{
+        margin-left: 20%;
     }
 
     .popular-products{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        justify-content: center;
+        grid-template-columns: repeat(1,1fr); 
+        margin-left: 25%;      
+    }
+    .see-more{
+        margin-left: -80%;
     }
 
     .social-influencer{
-        display: block;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .social-blogs{
-        margin-left: 100px;
-    }
-    footer{
-        width: 100%;
+        margin-left: 15%;
     }
 
-    
+    .social-influencer-banner img{
+        height: 300px;
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width:680px) {
+    .article-banner{
+        margin-left: 5%;
+    }
+    .section-title{
+        margin-left: -15%;
+    }
+    .popular-products{
+        margin-left: 10%;
+    }
+    .social-influencer-banner img{
+        height: 300px;
+        width: 450px;
+        margin-left: -5%;
+    }
+}
+
+
+@media screen and (max-width:603px) {
+    .blogs{
+        margin-left: 20%;
+    }
+    .article-banner{
+        margin-left: 5%;
+    }
+    .popular-products{
+        margin-left: 10%;
+    }
+    .social-influencer-banner img{
+        height: 300px;
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width:540px) {
+    .article-banner{
+        margin-left: -2%;
+    }
+    .popular-products{
+        margin-left: 10%;
+    }
+    .social-influencer-banner img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .blogs{
+        margin-left: 20%;
+    }
+
+    .article-banner{
+        margin-left: -3%;
+    }
+    .section-title{
+        margin-left: 2%;
+    }
+    .popular-products{
+        margin-left: 5%;
+    }
+    .see-more{
+        background-color: white;
+        margin-left: -80%;
+    }
 }
