@@ -455,3 +455,29 @@ footer{
         margin-left: -80%;
     }
 }
+
+
+@media screen and (max-width: 412px) {
+    .blogs{
+        margin-left: 10%;
+    }
+    .article-banner img{
+        width: 300px;
+    }
+    .article-banner{
+        margin-left: 5%;
+    }
+    .section-title{
+        margin-left: -5%;
+    }
+    .popular-products{
+        margin-left: -4%;
+    }
+    .social-influencer-banner{
+        margin-left: -1%;
+
+    }
+    .social-blogs{
+        margin-left: -5%;
+    }
+}
